@@ -1080,4 +1080,7 @@ class Teslacoin(Coin):
     IRC_PREFIX = "E_"
     IRC_CHANNEL = "#electrum-tes"
     RPC_PORT = 7685 #From README
+    TX_COUNT = 1352122 # 8-10-2017
+    TX_COUNT_HEIGHT = 2704246 # 2x TX_COUNT 
+    TX_PER_BLOCK = 2 # estimated
     
