@@ -1073,8 +1073,8 @@ class Teslacoin(Coin):
     NAME = "Teslacoin"
     SHORTNAME = "TES"
     NET = "mainnet"
-    P2PKH_VERBYTE = bytes.fromhex("b") # PUBKEY_ADDRESS DEC TO HEX https://github.com/TeslacoinFoundation/Teslacoin-v.3.3/blob/d8dc341be597a66dcd12313a262f2dd79866e2e5/src/base58.h#L279
-    P2SH_VERBYTES = [bytes.fromhex("8")] # SCRIPT_ADDRESS DEC TO HEX
+    P2PKH_VERBYTE = bytes.fromhex("0b") # PUBKEY_ADDRESS DEC TO HEX https://github.com/TeslacoinFoundation/Teslacoin-v.3.3/blob/d8dc341be597a66dcd12313a262f2dd79866e2e5/src/base58.h#L279
+    P2SH_VERBYTES = [bytes.fromhex("08")] # SCRIPT_ADDRESS DEC TO HEX
     WIF_BYTE = bytes.fromhex("4d") #M
     GENESIS_HASH = ('000003bc73d4b7f3fd328c3c114348ad61eab941c3ef9d49b81b7dc0c95ffb8b') #updated
     IRC_PREFIX = "E_"
