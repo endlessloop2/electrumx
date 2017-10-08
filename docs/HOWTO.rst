@@ -34,7 +34,7 @@ set in its configuration file.  If you have an existing installation
 of bitcoind and have not previously set this you will need to reindex
 the blockchain with::
 
-    bitcoind -reindex
+    teslacoind -reindex
 
 which can take some time.
 
@@ -76,10 +76,10 @@ Install the prerequisites above.
 
 Check out the code from Github::
 
-    git clone https://github.com/kyuupichan/electrumx.git
+    git clone https://github.com/endlessloop2/electrumx-tes.git
     cd electrumx
 
-You can install with `setup.py` or run the code from the source tree
+You can install with `python3 setup.py install` or run the code from the source tree
 or a copy of it.
 
 You should create a standard user account to run the server under;
