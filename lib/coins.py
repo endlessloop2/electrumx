@@ -1084,3 +1084,4 @@ class Teslacoin(Coin):
     TX_COUNT_HEIGHT = 2704246 # 2x TX_COUNT 
     TX_PER_BLOCK = 2 # estimated
     DAEMON = daemon.LegacyRPCDaemon
+    DESERIALIZER = DeserializerTxTime
