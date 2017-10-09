@@ -24,6 +24,7 @@ DB Engine        I use `plyvel`_ 0.9, a Python interface to LevelDB.
                  older versions likely are fine.
 `x11_hash`_      Only required for DASH.  Python X11 Hash package.  Only
                  required if for Dash.  Version 1.4 tested.
+`scrypt`_        Only required for Scrypt.  Python Scrypted Hash package.  Required by Teslacoin
 ================ ========================
 
 You need to be running a non-pruning bitcoin daemon with::
