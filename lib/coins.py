@@ -1067,7 +1067,6 @@ class CanadaeCoin(AuxPowMixin, Coin):
     TX_PER_BLOCK = 1
     IRC_PREFIX = "E_"
     IRC_CHANNEL="#electrum-cdn"
-    DAEMON = daemon.LegacyRPCDaemon
     RPC_PORT = 34330
     REORG_LIMIT = 1000
 class Teslacoin(Coin):
@@ -1084,4 +1083,4 @@ class Teslacoin(Coin):
     TX_COUNT = 1352122 # 8-10-2017
     TX_COUNT_HEIGHT = 2704246 # 2x TX_COUNT 
     TX_PER_BLOCK = 2 # estimated
-    
+    DAEMON = daemon.LegacyRPCDaemon
