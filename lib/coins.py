@@ -1079,7 +1079,7 @@ class Teslacoin(Coin):
     GENESIS_HASH = ('000003bc73d4b7f3fd328c3c114348ad61eab941c3ef9d49b81b7dc0c95ffb8b') #updated
     IRC_PREFIX = "E_"
     IRC_CHANNEL = "#electrum-tes"
-    RPC_PORT = 7685 #From README
+    RPC_PORT = 1857 #From README
     TX_COUNT = 1352122 # 8-10-2017
     TX_COUNT_HEIGHT = 2704246 # 2x TX_COUNT 
     TX_PER_BLOCK = 2 # estimated
