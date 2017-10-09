@@ -1085,3 +1085,4 @@ class Teslacoin(Coin):
     TX_PER_BLOCK = 2 # estimated
     DAEMON = daemon.LegacyRPCDaemon
     DESERIALIZER = DeserializerTxTime
+    HEADER_HASH = None
