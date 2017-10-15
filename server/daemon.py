@@ -225,6 +225,7 @@ class Daemon(LoggedClass):
     async def relayfee(self):
         '''The minimum fee a low-priority tx must pay in order to be accepted
         to the daemon's memory pool.'''
+        print("ABORT!!!!!!!!!!!!!!!!!")
         network_info = await self.getnetworkinfo()
         return network_info['relayfee']
 
