@@ -1083,7 +1083,7 @@ class Teslacoin(Coin):
     TX_COUNT = 1352122 # 8-10-2017
     TX_COUNT_HEIGHT = 2704246 # 2x TX_COUNT 
     TX_PER_BLOCK = 2 # estimated
-    DESERIALIZER = DeserializerTxTime
+    #DESERIALIZER = DeserializerTxTime
     ESTIMATE_FEE = 0.1 #idk
     RELAY_FEE = 0.1
     DAEMON = daemon.FakeEstimateFeeDaemon
