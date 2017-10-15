@@ -278,13 +278,15 @@ class ElectrumX(SessionBase):
         #revision //= 100
         #daemon_version = '{:d}.{:d}.{:d}'.format(major, minor, revision)
         #daemon_version = (1)
+        version = 1.0.0
+        revision = 100
         server_version = version.VERSION.split()[-1]
         for pair in [
                 ('$VERSION', version.VERSION), # legacy
                 ('$SERVER_VERSION', server_version),
                 ('$SERVER_SUBVERSION', version.VERSION),
-                ('$DAEMON_VERSION', 1),
-                ('$DAEMON_SUBVERSION', 1),
+                ('$DAEMON_VERSION', version),
+                ('$DAEMON_SUBVERSION', revision),
                 ('$DONATION_ADDRESS', self.env.donation_address),
         ]:
             banner = banner.replace(*pair)
