@@ -1084,6 +1084,10 @@ class Teslacoin(Coin):
     TX_COUNT_HEIGHT = 2704246 # 2x TX_COUNT 
     TX_PER_BLOCK = 2 # estimated
     DESERIALIZER = DeserializerTxTime
+    DAEMON = daemon.FakeEstimateFeeDaemon
+    ESTIMATE_FEE = 0.1 #idk
+    RELAY_FEE = 0.1
+    DAEMON = daemon.FakeEstimateFeeDaemon
     HEADER_HASH = None
     @classmethod
     def header_hash(cls, header):
