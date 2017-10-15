@@ -271,19 +271,20 @@ class ElectrumX(SessionBase):
         return peer_info and peer_info[0] == proxy.ip_addr
 
     async def replaced_banner(self, banner):
-        network_info = await self.controller.daemon_request('getnetworkinfo')
-        ni_version = network_info['version']
-        major, minor = divmod(ni_version, 1000000)
-        minor, revision = divmod(minor, 10000)
-        revision //= 100
-        daemon_version = '{:d}.{:d}.{:d}'.format(major, minor, revision)
+        #network_info = await self.controller.daemon_request('getnetworkinfo')
+        #ni_version = network_info['version']
+        #major, minor = divmod(ni_version, 1000000)
+        #minor, revision = divmod(minor, 10000)
+        #revision //= 100
+        #daemon_version = '{:d}.{:d}.{:d}'.format(major, minor, revision)
+        #daemon_version = (1)
         server_version = version.VERSION.split()[-1]
         for pair in [
                 ('$VERSION', version.VERSION), # legacy
                 ('$SERVER_VERSION', server_version),
                 ('$SERVER_SUBVERSION', version.VERSION),
-                ('$DAEMON_VERSION', daemon_version),
-                ('$DAEMON_SUBVERSION', network_info['subversion']),
+                ('$DAEMON_VERSION', 1),
+                ('$DAEMON_SUBVERSION', 1),
                 ('$DONATION_ADDRESS', self.env.donation_address),
         ]:
             banner = banner.replace(*pair)
@@ -295,7 +296,7 @@ class ElectrumX(SessionBase):
 
     async def banner(self):
         '''Return the server banner text.'''
-        banner = 'Welcome to Electrum!'
+        banner = 'Welcome to Teslacoin Electrum!'
 
         if self.is_tor():
             banner_file = self.env.tor_banner_file
